@@ -19,8 +19,8 @@ This repository provides a set of Python scripts and modules for simulating and 
 
 ### 1. Clone the Repository
 
-git clone <git@github.com:hydrogeohc/MCP_implement_KH.git>
-cd <MCP_implement_KH>
+git clone <'git@github.com:hydrogeohc/MCP_implement_KH.git'>
+cd <'MCP_implement_KH'>
 
 
 ### 2. Set Up a Virtual Environment (Recommended)

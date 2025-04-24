@@ -149,13 +149,5 @@ def generate_grid_visualization(dataset_id: str) -> Dict[str, Any]:
 # ----- Server Execution -----
 
 if __name__ == "__main__":
-    # Critical startup configuration
-    print("GridOperationsServer:STARTED", flush=True)  # Startup detection signal
-    
-    # Start HTTP server with network configuration
-    mcp.run(
-        transport='http',
-        host='0.0.0.0',  # Bind to all network interfaces
-        port=50051,       # Use designated port
-        debug=False       # Production-ready setting
-    )
+    print("GridOperationsServer:STARTED", flush=True)
+    mcp.run(transport='stdio')
