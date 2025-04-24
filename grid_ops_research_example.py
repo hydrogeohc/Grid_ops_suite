@@ -49,10 +49,9 @@ async def run_grid_operations_example():
         # Step 3: Connect to the server with proper parameters
         client = GridOperationsClient(model="openai:gpt-4o")
         print("Connecting to the Grid Operations Server...")
-        await client.connect_to_server(
-            host="localhost",  # Changed from script filename
-            port=50051        # Added explicit port
-        )
+        await client.connect_to_server("grid_ops_server.py")      # Added explicit port
+            
+        
 
         # [Rest of original code remains unchanged...]
         # Step 4-6: Example queries, model switching, context display
