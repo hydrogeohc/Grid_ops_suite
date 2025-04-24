@@ -7,6 +7,8 @@ This repository provides a set of Python scripts and modules for simulating and 
 ## 📁 Project Structure
 
 .
+undefined
+.
 ├── .DS_Store
 ├── .gitignore
 ├── README.md
@@ -18,7 +20,9 @@ This repository provides a set of Python scripts and modules for simulating and 
 ├── mcp_best_practices.py
 └── requirements.txt
 
-text
+
+undefined
+
 
 - **ai_suite_integration.py**: Integrates AI suite functionalities with grid operations.
 - **grid_ops_client.py**: Client-side script for interacting with the grid operations server.
@@ -34,23 +38,18 @@ text
 
 ### 1. Clone the Repository
 
-git clone <repository_url>
-cd <repository_folder>
+git clone <git@github.com:hydrogeohc/MCP_implement_KH.git>
+cd <MCP_implement_KH>
 
-text
 
 ### 2. Set Up a Virtual Environment (Recommended)
 
 python3 -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
 
-text
-
 ### 3. Install Dependencies
 
 pip install -r requirements.txt
-
-text
 
 ---
 
@@ -60,30 +59,23 @@ text
 
 python grid_ops_server.py
 
-text
-
 ### Run the Client
 
 In a new terminal (with the virtual environment activated):
 
 python grid_ops_client.py
 
-text
 
 ### Other Scripts
 
 - **Integrate AI suite:**
 python ai_suite_integration.py
 
-text
 - **Experiment with research examples:**
 python grid_ops_research_example.py
 
-text
 - **Review best practices:**
 python mcp_best_practices.py
-
-text
 
 ---
 
