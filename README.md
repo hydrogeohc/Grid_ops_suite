@@ -1,6 +1,6 @@
 # Grid Operations Suite
 
-This repository provides a set of Python scripts and modules for simulating and integrating grid operations, AI suite integration, and best practices for MCP (Mission Critical Power) systems.
+This repository provides a set of Python scripts and modules for simulating and integrating grid operations, AI suite integration, and best practices for MCP systems.
 
 ---
 <summary>📁 Project Structure</summary>
@@ -10,7 +10,7 @@ This repository provides a set of Python scripts and modules for simulating and 
 - **grid_ops_host.py**: Host module for managing grid operations.
 - **grid_ops_research_example.py**: Example script for research and experimentation.
 - **grid_ops_server.py**: Server-side script for handling grid operations.
-- **mcp_best_practices.py**: Contains best practices for Mission Critical Power systems.
+- **mcp_best_practices.py**: Contains best practices for MCP systems.
 - **mcp_troubleshooting**: General guidance for mcp trobuleshoot.
 - **requirements.txt**: Lists Python dependencies required to run the project.
 
