@@ -5,7 +5,7 @@ This repository provides a set of Python scripts and modules for simulating and 
 ---
 
 ## 📁 Project Structure
-
+```
 project-root/
 ├── grid_ops/
 │ ├── init.py
@@ -33,9 +33,7 @@ project-root/
 ├── Dockerfile
 ├── requirements.txt
 └── SECURITY.md
-
-text
-undefined
+```
 
 
 Other notable scripts and files:
@@ -56,20 +54,16 @@ Other notable scripts and files:
 git clone git@github.com:hydrogeohc/MCP_implement_Grid.git
 cd MCP_implement_Grid
 
-text
-
 ### 2. Set Up a Virtual Environment (Recommended)
 
 python3 -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
 
-text
 
 ### 3. Install Dependencies
 
 pip install -r requirements.txt
 
-text
 
 ---
 
@@ -79,7 +73,6 @@ text
 
 python -m grid_ops.server
 
-text
 
 ### Run the Client
 
@@ -87,7 +80,6 @@ In a new terminal (with the virtual environment activated):
 
 python grid_ops_client.py
 
-text
 
 ### Security Demos
 
@@ -95,13 +87,10 @@ Run insecure A2A demo:
 
 python insecure_demos/a2a/a2a-vulnerable-server.py
 
-text
-
 Test MCP vulnerabilities:
 
 python insecure_demos/mcp/attack-mcp-client.py
 
-text
 
 ### Other Scripts
 
