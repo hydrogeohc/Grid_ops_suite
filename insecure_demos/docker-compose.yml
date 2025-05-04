@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  a2a_demo:
+    build: .
+    command: python insecure_demos/a2a/a2a-vulnerable-server.py
+    ports:
+      - "5001:5001"
+  mcp_demo:
+    build: .
+    command: python insecure_demos/mcp/vuln-mcp.py
+    ports:
+      - "5002:5002"
