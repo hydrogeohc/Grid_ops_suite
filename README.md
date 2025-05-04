@@ -36,14 +36,58 @@ project-root/
 ```
 
 
-Other notable scripts and files:
-- **ai_suite_integration.py**: Integrates AI suite functionalities with grid operations.
-- **grid_ops_client.py**: Client-side script for interacting with the grid operations server.
-- **grid_ops_host.py**: Host module for managing grid operations.
-- **grid_ops_research_example.py**: Example script for research and experimentation.
-- **grid_ops_server.py**: Server-side script for handling grid operations.
-- **mcp_best_practices.py**: Contains best practices for MCP systems.
-- **mcp_troubleshooting**: General guidance for MCP troubleshooting.
+grid_ops/
+
+Contains core logic for grid operations.
+
+__init__.py: Initializes the grid operations module.
+
+server.py: Exposes grid operation tools and server endpoints.
+
+operations.py: Implements the main grid operation functions (e.g., forecasting, optimization).
+
+adk_integration/
+
+Manages integration with AI-driven agents and security protocols.
+
+__init__.py: Initializes the ADK integration module.
+
+agent.py: Defines agent setup and communication logic.
+
+security.py: Handles secure connections and secret management.
+
+a2a_workflows/
+
+Implements agent-to-agent workflow orchestration.
+
+__init__.py: Initializes the A2A workflows module.
+
+orchestrator.py: Coordinates multi-agent interactions and tasks.
+
+insecure_demos/
+
+Provides intentionally vulnerable demo servers and attack clients for security testing and education.
+
+a2a/
+
+a2a-vulnerable-server.py: Example of a vulnerable A2A server (e.g., SQL injection).
+
+a2a-attack-client.py: Demonstrates attacks against the vulnerable server.
+
+mcp/
+
+vuln-mcp.py: Example of a vulnerable MCP server (e.g., remote code execution).
+
+attack-mcp-client.py: Demonstrates attacks against the vulnerable MCP server.
+
+docs/security/
+
+Contains security documentation and testing guides.
+
+ANALYSIS.md: Security analysis and best practices.
+
+TESTING.md: Instructions for testing vulnerabilities and secure patterns.
+
 
 ---
 
@@ -91,15 +135,6 @@ Test MCP vulnerabilities:
 
 python insecure_demos/mcp/attack-mcp-client.py
 
-
-### Other Scripts
-
-- **Integrate AI suite:**  
-  `python ai_suite_integration.py`
-- **Experiment with research examples:**  
-  `python grid_ops_research_example.py`
-- **Review best practices:**  
-  `python mcp_best_practices.py`
 
 ---
 
