@@ -1,6 +1,6 @@
-# Grid Operations Suite
+# GridOps Suite: Modular Operations, Security, and Integration
 
-This repository provides a set of Python scripts and modules for simulating and integrating grid operations, AI suite integration, and best practices for Model Context Protocol (MCP) systems.
+This project is organized into modular directories to promote clarity, maintainability, and scalability. Core grid operations are handled in the grid_ops module, while adk_integration manages agent and security integration. The a2a_workflows folder contains orchestration logic for agent-to-agent workflows. For educational and testing purposes, the insecure_demos directory provides intentionally vulnerable A2A and MCP servers alongside attack clients. Comprehensive security documentation and analysis are available in the docs/security folder. Deployment and environment configuration are streamlined with docker-compose.yml, Dockerfile, and requirements.txt, and security policies are outlined in SECURITY.md. This structure ensures a robust foundation for both development and secure operations.
 
 ---
 
