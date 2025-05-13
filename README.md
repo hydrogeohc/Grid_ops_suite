@@ -1,154 +1,110 @@
-# GridOps Suite: Modular Operations, Security, and Integration
+# GridOps Suite
 
-This project is organized into modular directories to promote clarity, maintainability, and scalability. Core grid operations are handled in the grid_ops module, while adk_integration manages agent and security integration. The a2a_workflows folder contains orchestration logic for agent-to-agent workflows. For educational and testing purposes, the insecure_demos directory provides intentionally vulnerable A2A and MCP servers alongside attack clients. Comprehensive security documentation and analysis are available in the docs/security folder. Deployment and environment configuration are streamlined with docker-compose.yml, Dockerfile, and requirements.txt, and security policies are outlined in SECURITY.md. This structure ensures a robust foundation for both development and secure operations.
+**Modular Grid Operations, Security, and Integration**
+
+GridOps Suite is a modular Python framework designed for secure, scalable, and maintainable grid operations. It provides core grid operation tools, agent integration, workflow orchestration, and intentionally vulnerable demos for security testing and education. The project structure promotes clarity and extensibility, making it suitable for both production use and cybersecurity research.
+
+---
+
+## 🚩 Key Features
+
+- **Modular Architecture:** Separates core grid logic, agent integration, workflows, and demos for maintainability and scalability.
+- **Security Focus:** Includes dedicated security documentation, best practices, and intentionally vulnerable servers for testing and training.
+- **Agent Integration:** Supports AI-driven agent orchestration and secure communication.
+- **Educational Demos:** Provides vulnerable servers and attack clients for hands-on security learning.
+- **Containerized Deployment:** Includes Docker support for streamlined setup and reproducibility.
 
 ---
 
 ## 📁 Project Structure
 ```
 project-root/
-├── grid_ops/
-│ ├── init.py
-│ ├── server.py
-│ └── operations.py
-├── adk_integration/
-│ ├── init.py
-│ ├── agent.py
-│ └── security.py
-├── a2a_workflows/
-│ ├── init.py
-│ └── orchestrator.py
-├── insecure_demos/
+├── grid_ops/ # Core grid operation logic (server, operations)
+├── adk_integration/ # Agent and security integration modules
+├── a2a_workflows/ # Agent-to-agent workflow orchestration
+├── insecure_demos/ # Vulnerable servers and attack clients for demos
 │ ├── a2a/
-│ │ ├── a2a-vulnerable-server.py
-│ │ └── a2a-attack-client.py
 │ └── mcp/
-│ ├── vuln-mcp.py
-│ └── attack-mcp-client.py
 ├── docs/
-│ └── security/
-│ ├── ANALYSIS.md
-│ └── TESTING.md
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── SECURITY.md
+│ └── security/ # Security analysis and testing guides
+├── docker-compose.yml # Container orchestration
+├── Dockerfile # Docker image definition
+├── requirements.txt # Python dependencies
+└── SECURITY.md # Security policies and reporting
+
+text
+
+- **grid_ops/**: Implements core grid operations, including forecasting and optimization logic.
+- **adk_integration/**: Manages AI agent setup, communication, and security protocols.
+- **a2a_workflows/**: Coordinates multi-agent workflows and task orchestration.
+- **insecure_demos/**: Contains intentionally vulnerable A2A and MCP servers and attack clients for security testing.
+- **docs/security/**: Provides security analysis, best practices, and testing instructions.
+- **Docker/Docker Compose**: Enables containerized deployment for development and production.
 ```
-
-
-grid_ops/
-
-Contains core logic for grid operations.
-
-__init__.py: Initializes the grid operations module.
-
-server.py: Exposes grid operation tools and server endpoints.
-
-operations.py: Implements the main grid operation functions (e.g., forecasting, optimization).
-
-adk_integration/
-
-Manages integration with AI-driven agents and security protocols.
-
-__init__.py: Initializes the ADK integration module.
-
-agent.py: Defines agent setup and communication logic.
-
-security.py: Handles secure connections and secret management.
-
-a2a_workflows/
-
-Implements agent-to-agent workflow orchestration.
-
-__init__.py: Initializes the A2A workflows module.
-
-orchestrator.py: Coordinates multi-agent interactions and tasks.
-
-insecure_demos/
-
-Provides intentionally vulnerable demo servers and attack clients for security testing and education.
-
-a2a/
-
-a2a-vulnerable-server.py: Example of a vulnerable A2A server (e.g., SQL injection).
-
-a2a-attack-client.py: Demonstrates attacks against the vulnerable server.
-
-mcp/
-
-vuln-mcp.py: Example of a vulnerable MCP server (e.g., remote code execution).
-
-attack-mcp-client.py: Demonstrates attacks against the vulnerable MCP server.
-
-docs/security/
-
-Contains security documentation and testing guides.
-
-ANALYSIS.md: Security analysis and best practices.
-
-TESTING.md: Instructions for testing vulnerabilities and secure patterns.
-
-
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+1. **Clone the Repository**
+git clone git@github.com:hydrogeohc/Grid_ops_suite.git
+cd Grid_ops_suite
 
-git clone git@github.com:hydrogeohc/MCP_implement_Grid.git
-cd MCP_implement_Grid
+text
 
-### 2. Set Up a Virtual Environment (Recommended)
-
+2. **Set Up a Virtual Environment (Recommended)**
 python3 -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
 
+text
 
-### 3. Install Dependencies
-
+3. **Install Dependencies**
 pip install -r requirements.txt
 
+text
 
 ---
 
 ## ⚡ Usage
 
-### Run the Grid Operations Server
-
+- **Run the Grid Operations Server**
 python -m grid_ops.server
 
+text
 
-### Run the Client
-
-In a new terminal (with the virtual environment activated):
-
+- **Run the Client**
 python grid_ops_client.py
 
+text
 
-### Security Demos
-
-Run insecure A2A demo:
-
-python insecure_demos/a2a/a2a-vulnerable-server.py
-
-Test MCP vulnerabilities:
-
-python insecure_demos/mcp/attack-mcp-client.py
-
+- **Security Demos**
+- Run insecure A2A demo server:
+  ```
+  python insecure_demos/a2a/a2a-vulnerable-server.py
+  ```
+- Test MCP vulnerabilities:
+  ```
+  python insecure_demos/mcp/attack-mcp-client.py
+  ```
 
 ---
 
 ## 🛠️ Customization
 
-- Edit the respective Python files in the module directories to modify or extend functionalities.
-- Refer to comments and docstrings within each file for more details.
-- See `docs/security/` for security guidance and best practices.
+- Modify or extend functionalities by editing Python files in the relevant module directories.
+- Consult inline comments and docstrings for guidance.
+- Refer to `docs/security/` for security best practices and analysis.
 
 ---
 
 ## 📝 Notes
 
-- Requires **Python 3.9 or higher** for full functionality.
-- For any issues or questions, please open an issue or contact the maintainer.
-- Security audit reports and documentation are in `docs/security/`.
-- Use `SECURITY.md` for vulnerability reporting procedures.
+- **Python 3.9 or higher** is required.
+- For issues or questions, open a GitHub issue or contact the maintainer.
+- Security documentation and audit reports are available in `docs/security/`.
+- Follow `SECURITY.md` for vulnerability reporting procedures.
+
+---
+
+GridOps Suite provides a robust foundation for developing, securing, and testing grid operation workflows in both research and production environments.
+---
+
