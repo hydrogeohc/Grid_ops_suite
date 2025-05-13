@@ -48,18 +48,12 @@ project-root/
 git clone <git@github.com:hydrogeohc/Grid_ops_suite.git>
 cd Grid_ops_suite
 
-text
-
 2. **Set Up a Virtual Environment (Recommended)**
 python3 -m venv venv
 source venv/bin/activate # On Windows: venv\Scripts\activate
 
-text
-
 3. **Install Dependencies**
 pip install -r requirements.txt
-
-text
 
 ---
 
@@ -68,12 +62,8 @@ text
 - **Run the Grid Operations Server**
 python -m grid_ops.server
 
-text
-
 - **Run the Client**
 python grid_ops_client.py
-
-text
 
 - **Security Demos**
 - Run insecure A2A demo server:
