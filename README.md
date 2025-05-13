@@ -31,8 +31,7 @@ project-root/
 ├── Dockerfile # Docker image definition
 ├── requirements.txt # Python dependencies
 └── SECURITY.md # Security policies and reporting
-
-text
+```
 
 - **grid_ops/**: Implements core grid operations, including forecasting and optimization logic.
 - **adk_integration/**: Manages AI agent setup, communication, and security protocols.
@@ -40,13 +39,13 @@ text
 - **insecure_demos/**: Contains intentionally vulnerable A2A and MCP servers and attack clients for security testing.
 - **docs/security/**: Provides security analysis, best practices, and testing instructions.
 - **Docker/Docker Compose**: Enables containerized deployment for development and production.
-```
+
 ---
 
 ## 🚀 Getting Started
 
 1. **Clone the Repository**
-git clone git@github.com:hydrogeohc/Grid_ops_suite.git
+git clone <git@github.com:hydrogeohc/Grid_ops_suite.git>
 cd Grid_ops_suite
 
 text
@@ -103,8 +102,5 @@ text
 - Security documentation and audit reports are available in `docs/security/`.
 - Follow `SECURITY.md` for vulnerability reporting procedures.
 
----
 
-GridOps Suite provides a robust foundation for developing, securing, and testing grid operation workflows in both research and production environments.
----
 
