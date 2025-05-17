@@ -9,7 +9,6 @@ async def create_grid_agent():
             args=["-m", "grid_ops.server"]
         )
     )
-    
     return LlmAgent(
         model='gemini-2.0-flash',
         name='grid_operator',

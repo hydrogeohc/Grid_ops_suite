@@ -1,3 +1,3 @@
 """
-Grid Operations package initialization.
+A2A Workflows package initialization.
 """

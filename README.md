@@ -18,7 +18,7 @@ GridOps Suite is a modular Python framework designed for secure, scalable, and m
 
 ## 📁 Project Structure
 ```
-project-root/
+project/
 ├── grid_ops/ # Core grid operation logic (server, operations)
 ├── adk_integration/ # Agent and security integration modules
 ├── a2a_workflows/ # Agent-to-agent workflow orchestration

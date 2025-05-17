@@ -12,4 +12,5 @@ def secure_connection():
 def get_secret(name):
     client = secretmanager.SecretManagerServiceClient()
     secret_name = f"projects/{os.getenv('PROJECT_ID')}/secrets/{name}/versions/latest"
-    return client.access_secret_version(name=secret_name).payload.data.decode('UTF-8')
+    response = client.access_secret_version(request={"name": secret_name})
+    return response.payload.data.decode('UTF-8')

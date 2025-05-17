@@ -1,3 +1,0 @@
-"""
-ADK Integration package initialization.
-"""
